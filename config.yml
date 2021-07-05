@@ -1,5 +1,6 @@
 BAS_WELCOME_MESSAGE: "Welcome to Baby Sleep Info Source"
 BAS_PRIMARY_COLOR: "#61046e" # red
+FONT_FAMILY_TITLE: "Crimson"
 
 # Footer links are dictionaries with a "title" and "url"
 # To remove all links, write:
