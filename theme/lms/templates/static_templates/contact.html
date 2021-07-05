@@ -1,0 +1,37 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Contact")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Contact")}</%block>
+        </h1>
+        
+            <%block name="pagecontent">
+				
+				<h2>Main postal address</h2>
+<p>The Palatine Centre <br>Durham University<br>Stockton Road<br>Durham<br>DH1 3LE<br>UK</p>
+<h2>Other useful contacts</h2>
+<ul>
+<li><b>University Switchboard: 0191 334 2000</b></li>
+<li>Admissions enquiries: <a href="https://studyatdurham.microsoftcrmportals.com/en-US/knowledgebase/">Frequently asked questions</a>  <a href="https://www.dur.ac.uk/study/askus/">Make an enquiry</a></li>
+<li>Business School: 0191 334 5200</li>
+<li>Conference and Tourism (Event Durham): 0191 334 2887</li>
+<li>Development and Alumni Relations: 0191 334 6305</li>
+<li>Graduate School: 0191 334 4570</li>
+<li>International Office: 0191 334 6328</li>
+<li>Marketing: 0191 334 6316</li>
+<li>Media Relations: 0191 334 6075</li>
+<li>Prospectus enquiries: 0191 334 6128</li>
+<li>University Library: 0191 334 3042</li>
+
+</ul>
+				
+				
+		<p>		For any question regarding the usage of {{ PLATFORM_NAME }}, please get in touch with <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>.</%block>
+        </p>
+    </section>
+</main>
