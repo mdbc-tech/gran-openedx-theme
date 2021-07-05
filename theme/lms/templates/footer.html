@@ -37,10 +37,10 @@
               % endif
           </p>
 
-          {% if DUR_FOOTER_LEGAL_LINKS %}
+          {% if BAS_FOOTER_LEGAL_LINKS %}
           <nav class="navbar legal-nav navbar-expand-sm" aria-label="${_('Legal')}">
             <ul class="navbar-nav">
-              {% for link in DUR_FOOTER_LEGAL_LINKS %}
+              {% for link in BAS_FOOTER_LEGAL_LINKS %}
                 <li class="nav-item">
                   <a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a>
                 </li>
@@ -78,10 +78,10 @@
       % endif
     >
       <div class="colophon">
-        {% if DUR_FOOTER_NAV_LINKS %}
+        {% if BAS_FOOTER_NAV_LINKS %}
         <nav class="nav-colophon" aria-label="${_('About')}">
           <ol>
-              {% for link in DUR_FOOTER_NAV_LINKS %}
+              {% for link in BAS_FOOTER_NAV_LINKS %}
               <li>
                 <a href="{{ link['url'] }}">{{ link['title'] }}</a>
               </li>
